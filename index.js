@@ -2,7 +2,7 @@ import * as cheerio from "cheerio";
 import xml from "xml";
 
 async function main(newsletter, self_url) {
-  const url = `https://www.linkedin.com/newsletters/${newsletter}`;
+  const url = `https://www.linkedin.com/newsletters/digitale-verwaltung-7039205695174397952/`;
   const response = await (await fetch(url)).text();
   const $ = cheerio.load(response);
 
